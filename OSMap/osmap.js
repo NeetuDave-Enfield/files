@@ -19,9 +19,9 @@ proj4.defs([
 	]);
 
 function do_KDF_pageChange_OSMap(event,kdf,currentpageid,targetpageid) {
+	console.log("test message 2");
 	$('.dform_page[data-pos="'+targetpageid+'"] div[id="map"]').each(function() {
-		console.log("on a form with map");
-		//initialiseOSMap(this);
+		initialiseOSMap(this);
 	});
 }
 
